@@ -6,7 +6,7 @@ Given an array *nums*, there is a sliding window of size *k* which is moving fro
 
 **Example**:
 
-![239_example](239_example.png)
+![239_example](doc/239_example.png)
 
 
 

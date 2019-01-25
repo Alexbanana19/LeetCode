@@ -25,26 +25,9 @@ class Solution(object):
         """
         if len(nums) <= 1:
             return len(nums)
-        
-        """Orignal Solution, Swapping"""
-
-        # for i in range(len(nums)):
-        #     for j in range(i+1, len(nums)):
-        #         flag = False
-        #         if nums[j] <= nums[i] and j <= len(nums)-1:
-        #             for k in range(j+1, len(nums)):
-        #                 if nums[i] < nums[k]:
-        #                     temp = nums[j]
-        #                     nums[j] = nums[k]
-        #                     nums[k] = temp
-        #                     flag = True
-        #                     break
-        #             if not flag:
-        #                 return i + 1
-        #         break
         ind = 1
         for i in range(1,len(nums)):
-            if nums[i] != nums[i-1]:
+            if nums[i] != nums[i-1]:# find the boundary
                 nums[ind] = nums[i]
                 ind += 1
         return ind
