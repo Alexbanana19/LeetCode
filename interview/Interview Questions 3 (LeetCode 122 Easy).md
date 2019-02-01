@@ -8,7 +8,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 **Note:** You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
-![126_example](doc\126_example.png)
+![126_example](doc/126_example.png)
 
 ## Solution 1 Dynamic Programming (Time O(n^2), Space O(n))
 
