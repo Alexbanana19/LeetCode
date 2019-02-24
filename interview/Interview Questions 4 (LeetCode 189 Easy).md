@@ -4,7 +4,7 @@
 
 Given an array, rotate the array to the right by *k* steps, where *k* is non-negative.
 
-![126_example](C:/Users/Alex/Desktop/leetcode/interview/doc/189_example.png)
+![126_example](doc/189_example.png)
 
 ## Solution 1 Naive Solution (Time O(n), Space O(1))
 
