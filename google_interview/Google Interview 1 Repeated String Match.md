@@ -66,7 +66,7 @@ class Solution(object):
         :type B: str
         :rtype: int
         """
-        times = -(-len(B)//len(A)) # an implementaion of ceil(len(A)//len(B)) with out 										the library
+        times = -(-len(B)//len(A)) # an implementaion of ceil(len(A)//len(B)) without the library
         for i in range(2):
             if B in A*(i+times):
                 return times + i
