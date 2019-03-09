@@ -54,7 +54,7 @@ class Solution(object):
 
 ## Solution 2 Elegant Solution
 
-So basically if B is the substring of rep(A, k), then we should return k = x or x + 1, where x = ceil(len(A)/len(B)). We only need to check whether B is in rep(A, x) or rep(A, x+1).
+So basically if B is the substring of rep(A, k), then we should return k = x or x + 1, where x = ceil(len(A)//len(B)). We only need to check whether B is in rep(A, x) or rep(A, x+1).
 
 ### Code
 
@@ -66,7 +66,7 @@ class Solution(object):
         :type B: str
         :rtype: int
         """
-        times = -(-len(B)/len(A))
+        times = -(-len(B)//len(A)) # an implementaion of ceil(len(A)//len(B)) with out 										the library
         for i in range(2):
             if B in A*(i+times):
                 return times + i
