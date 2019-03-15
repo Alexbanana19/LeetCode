@@ -31,7 +31,7 @@ two steps:
 ### Code
 
 ```python
-	class Solution(object):
+class Solution(object):
     def reverseWords(self, str):
         """
         :type str: List[str]
