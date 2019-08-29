@@ -23,11 +23,11 @@ In this simple implementation, we use an **array of linked lists** and a **hash 
 
 
 
-### Resizable Arrays
+## Resizable Arrays
 
 A typical implementation is that when the array is full, the array doubles in size. Each doubling takes `O(n)` time, but happens so rarely that its **amortized** insertion time is still `O(1)`.
 
-#### Why?
+### Why?
 
 Suppose you have an array of size `N`. We can work backwards to compute how many elements we copied
 at each capacity increase. Observe that when we increase the array to `K` elements, the array was previously
@@ -46,7 +46,7 @@ Therefore, the total number of copies to insert `N` elements is roughly `N/2` + 
 
 
 
-### StringBuilder
+## StringBuilder
 
 Imagine you were concatenating a list of strings, as shown below. What would the running time of this code be? For simplicity, assume that the strings are all the same length (call this `x`) and that there are `n` strings.
 
